@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFuturo - Sustentabilidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌱 EcoFuturo</h1>
+    <p>Pequenas ações geram grandes mudanças.</p>
+
+    <button id="temaBtn" aria-label="Alternar tema">
+        🌙 Modo Escuro
+    </button>
+</header>
+
+<nav aria-label="Menu principal">
+    <a href="#sobre">Sobre</a>
+    <a href="#acoes">Ações</a>
+    <a href="#quiz">Quiz</a>
+</nav>
+
+<section id="hero">
+    <h2>Construa um planeta melhor</h2>
+    <p>
+        Descubra como atitudes sustentáveis podem transformar o futuro.
+    </p>
+</section>
+
+<section id="sobre">
+    <h2>🌍 O que é Sustentabilidade?</h2>
+    <p>
+        Sustentabilidade significa utilizar os recursos naturais de forma
+        consciente para garantir qualidade de vida para as gerações atuais e futuras.
+    </p>
+</section>
+
+<section id="acoes">
+    <h2>♻️ Ações Sustentáveis</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>💧 Economize Água</h3>
+            <p>Feche a torneira enquanto escova os dentes.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Economize Energia</h3>
+            <p>Desligue aparelhos quando não estiver usando.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌳 Plante Árvores</h3>
+            <p>Ajude a reduzir o CO₂ e melhorar a qualidade do ar.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contador">
+    <h2>🌱 Seu Impacto Verde</h2>
+
+    <p>Pontos sustentáveis:</p>
+
+    <div id="pontos" aria-live="polite">0</div>
+
+    <button onclick="ganharPonto()">
+        Fiz uma ação sustentável!
+    </button>
+</section>
+
+<section id="quiz">
+    <h2>🧠 Quiz Sustentável</h2>
+
+    <p>
+        Qual destas ações ajuda mais a reduzir resíduos?
+    </p>
+
+    <button onclick="verificarResposta(true)">
+        Reciclar materiais
+    </button>
+
+    <button onclick="verificarResposta(false)">
+        Jogar tudo no lixo comum
+    </button>
+
+    <p id="resultado"></p>
+</section>
+
+<footer>
+    <p>
+        © 2026 EcoFuturo | Projeto Educacional de Sustentabilidade
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
